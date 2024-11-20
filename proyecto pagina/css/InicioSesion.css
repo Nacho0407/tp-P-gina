@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 84%);
+}
+
+form{
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width:  512px;
+    padding: 3rem;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+div{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+#submit {
+    padding: 0.5rem 2rem;
+    background-color: #797979;
+    border-radius: 5px;
+    border: none;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(118, 79%, 21%);;
+}

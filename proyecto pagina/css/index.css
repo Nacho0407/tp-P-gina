@@ -1,71 +1,212 @@
 
-#a1 {
-    text-decoration: none;   
-    background: linear-gradient(to top left, hwb(123 4% 71%), hsl(123, 83%, 56%)) ; 
-    display:flex;
-    width: fit-content;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    padding: 8px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 500ms;
+    background-color:hsl(118, 79%, 21%);
+    padding: 15px 30px;
+    color: white;
 }
 
-#a1:hover{
-    opacity: 0.8;
-    scale: 1.1;
-}
-#a2 {
-    text-decoration: none;   
-    background: linear-gradient(to top left, hwb(123 4% 71%), hsl(123, 83%, 56%)) ; 
-    display:flex;
-    width: fit-content;
+.logo {
+    display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px;
-    font-size: 20px;
-    color: #ffffff;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
     font-weight: bold;
-    border-radius: 5px;
-    transition: all 500ms;
 }
 
-#a2:hover{
-    opacity: 0.8;
-    scale: 1.1;
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
-#a3 {
-    text-decoration: none; 
-    background: linear-gradient(to top left, hwb(123 4% 71%), hsl(123, 83%, 56%)) ;  
-    display:flex;
-    width: fit-content;
-    align-items: center;
-    gap: 10px;
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e74c3c; 
+}
+
+
+.search input {
     padding: 8px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
+    font-size: 1rem;
     border-radius: 5px;
-    transition: all 500ms;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
-#a3:hover{
-    opacity: 0.8;
-    scale: 1.1;
+.search input:focus {
+    border-color: #e74c3c;
 }
 
-div{
-    height: auto;
-    width: auto;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-body{
-    background-color: hsl(118, 79%, 21%);
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
 }
 
 
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .futbol-argentino {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .descripcion h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0f4b72;
+  }
+  
+  .descripcion {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .copa-galeria {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .copa {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .copa:hover {
+    transform: scale(1.05);
+  }
+  
+  .copa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .copa h3 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  
      
